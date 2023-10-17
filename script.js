@@ -62,7 +62,7 @@ async function jogo(escolha) {
 
     placar.textContent = `${pontuacao} - ${pontuacaoAdversario}`;
 
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 1500));
     resetPositions();
 }
 

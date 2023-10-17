@@ -4,8 +4,11 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     background-color: #000;
     user-select: none;
+    overflow: hidden;
 }
 
 .container {
@@ -69,7 +72,7 @@ body {
 
 .escolha-adversario {
     opacity: 0;
-    transform: rotate(-90deg) ;
+    transform: rotate(-90deg);
     transition: 1s;
 }
 
@@ -88,6 +91,7 @@ body {
 .elemento-escolha-encostado {
     justify-content: end;
 }
+
 .elemento-adversario-encostado {
     justify-content: start;
 
@@ -107,4 +111,64 @@ i {
     height: 50px;
     font-size: 40px;
     color: #000;
+}
+
+
+@media (max-width: 1350px) {
+
+    .adversario,
+    .escolhas {
+        font-size: 80px;
+    }
+
+    .escolha {
+        cursor: auto;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .box-principal {
+        height: 60vh;
+        position: relative;
+    }
+
+    .adversario,
+    .escolhas {
+        width: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adversario {
+        flex-direction: column-reverse;
+    }
+
+    .box-jogo {
+        justify-content: space-evenly;
+        margin-top: 25px;
+    }
+
+    .titulo {
+        position: absolute;
+        top: 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .box-principal {
+        width: 85%;
+        position: relative;
+    }
+
+    .titulo {
+        font-size: 50px;
+    }
+
+    .adversario,
+    .escolhas {
+        font-size: 70px;
+    }
 }
