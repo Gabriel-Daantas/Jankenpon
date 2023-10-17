@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    user-select: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-placar {
+    position: absolute;
+    top: 10%;
+}
+
+.placar {
+    color: #fff;
+    font-size: 44px;
+    text-shadow: #fff 1px 1px 15px;
+}
+
+.box-principal {
+    height: 50vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #b10000;
+    border: 3px solid #ff0000;
+    border-radius: 15px;
+    box-shadow: #ff0000 1px 1px 120px 10px;
+}
+
+.titulo {
+    font-size: 60px;
+}
+
+.box-jogo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.adversario,
+.escolhas {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 120px;
+    background-color: transparent;
+}
+
+.escolha {
+    cursor: pointer;
+    opacity: 0;
+    transform: rotate(90deg) rotateY(180deg);
+    transition: 1s;
+}
+
+.escolha-adversario {
+    opacity: 0;
+    transform: rotate(-90deg) ;
+    transition: 1s;
+}
+
+.fade {
+    opacity: 1;
+}
+
+.elemento-removido {
+    display: none;
+}
+
+.pointer-removido {
+    cursor: auto;
+}
+
+.elemento-escolha-encostado {
+    justify-content: end;
+}
+.elemento-adversario-encostado {
+    justify-content: start;
+
+}
+
+.vs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-style: italic;
+}
+
+i {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    color: #000;
+}
